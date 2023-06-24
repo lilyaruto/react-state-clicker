@@ -1,11 +1,11 @@
 import { Component } from "react";
+import "./RandNum.css"
 
 class RandNum extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            number: 1,
-            isWinning: false
+            number: 1
         };
         this.handleClick = this.handleClick.bind(this)
     }
@@ -18,7 +18,8 @@ class RandNum extends Component {
         return(
             <div>
                 <h1>Number is {this.state.number}</h1>
-                <button onClick={this.handleClick}>Random Number</button>
+                <button className={this.state.number === 7 ? "notvisible" : "rand-button visible"} onClick={this.handleClick}>Random Number</button>
+                <span className={this.state.number === 7 ? "win-msg visible" : "notvisible"}>you win!</span>
             </div>
         );
     }

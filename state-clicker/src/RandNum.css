@@ -1,0 +1,26 @@
+.notvisible {
+    display: none;
+}
+
+.rand-button {
+    background-color: rgb(57, 116, 226);
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.rand-button:hover {
+    background-color: cornflowerblue;
+    transition: 0.3s;
+}
+
+.win-msg {
+    text-transform: uppercase;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
